@@ -1,0 +1,73 @@
+.container-header {
+    width: 100%;
+    box-sizing: border-box;
+    padding: .75rem 0;
+    background-color: var(--color-white);
+}
+
+.header {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header .logo {
+    max-width: 200px;
+    margin-right: 50px;
+}
+
+.header .menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header .menu .divider {
+    width: 1px;
+    height: 8px;
+    background-color: var(--color-light);
+}
+
+/* Rodape */
+
+.container-footer {
+    width: 100%;
+    box-sizing: border-box;
+    padding: .5rem 0;
+    background-color: var(--color-white);
+    font-size: .75rem;
+    margin-top: 1rem;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .logo {
+    max-width: 100px;
+}
+
+@media screen and (max-width: 750px) {
+    .header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .header .logo {
+        flex-shrink: 0;
+        margin-right: 0;
+    }
+
+    .header .menu {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}

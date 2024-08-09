@@ -1,0 +1,60 @@
+/* LOGO */
+.form .logo {
+    width: 60%;
+}
+
+/* LOGIN */
+
+.container-login {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.container-login .logo {
+    margin-bottom: 10px;
+}
+
+.container-login .form {
+    width: 100%;
+    max-width: 480px;
+    box-sizing: border-box;
+    border-radius: .375rem;
+    background-color: var(--color-white);
+    padding: 40px;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.container-login .container-field {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.container-login .container-field label {
+    font-size: .75rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: var(--color-dark);
+}
+
+.container-login button {
+    margin-top: 4px;
+}
+
+.container-login .alert {
+    width: 100%;
+    max-width: 480px;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 600px) {
+    .container-login .form {
+        max-width: 90%;        
+        margin: 0 auto;
+    }
+}
